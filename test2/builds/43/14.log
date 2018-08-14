@@ -1,0 +1,52 @@
+[test2] Running batch script
+
+C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2>D:\maven\apache-maven-3.5.2/bin/mvn clean test -Denv=hello1  -DbrowserName=chrome 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SampleProject 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.testng:testng:jar:5.14.3 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for org.testng:testng:jar:5.14.4 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for org.testng:testng:jar:5.14.5 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for com.beust:jcommander:jar:1.66 is missing, no dependency information available
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ SampleProject ---
+[INFO] Deleting C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SampleProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ SampleProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SampleProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ SampleProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 26 source files to C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ SampleProject ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+hello1----chrome
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.843 sec - in TestSuite
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.989 s
+[INFO] Finished at: 2018-08-10T12:08:38+05:30
+[INFO] Final Memory: 32M/263M
+[INFO] ------------------------------------------------------------------------

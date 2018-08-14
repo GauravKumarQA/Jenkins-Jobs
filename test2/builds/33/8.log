@@ -1,0 +1,16 @@
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 4dd3d588c61e2c1487a9c39e5f19d946821cdf40 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 4dd3d588c61e2c1487a9c39e5f19d946821cdf40
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -D master # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master 4dd3d588c61e2c1487a9c39e5f19d946821cdf40
+Commit message: "Update TestValue.java"
+ > C:\Program Files\Git\bin\git.exe rev-list 92aac6b4f91b72a739359314e95f11dc1991ad49 # timeout=10

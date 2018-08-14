@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.23">
+  <suites>
+    <suite>
+      <file>E:\TESTING\TPworkSpace\cucumber\target\surefire-reports\TEST-runner.RunTest.xml</file>
+      <name>runner.RunTest</name>
+      <duration>0.012</duration>
+      <time>0.012</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.012</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Given User is on Home Page</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>When User Navigate to LogIn Page</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>And User enters UserName and Password</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Then Message displayed Login Successfully</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Scenario: Successful Login with Valid Credentials</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.012</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

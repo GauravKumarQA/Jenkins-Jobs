@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.15">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Env</name>
+          <description></description>
+          <value>hello1</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>Env</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>hello1</string>
+                  <string>hello2</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>gaurav</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.3">
+              <sha1>7cba99786d42b0d6a01c9dd465c47f140e773642</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>36</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2</ws>
+    </hudson.plugins.git.GitTagAction>
+    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@2.6">
+      <revisionStates>
+        <entry>
+          <string>git https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG</string>
+          <hudson.scm.SCMRevisionState_-None/>
+        </entry>
+      </revisionStates>
+    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+  </actions>
+  <queueId>101</queueId>
+  <timestamp>1533840694011</timestamp>
+  <startTime>1533840694017</startTime>
+  <result>FAILURE</result>
+  <duration>9898</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script> properties([parameters([choice(choices: &apos;hello1\nhello2&apos;, description: &apos;&apos;, name: &apos;Env&apos;)]), pipelineTriggers([])])
+node{
+    stage(&apos;Pull from git hub&apos;){
+      git &apos;https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG&apos;
+    }
+ stages(&apos;testing&apos;){
+    stage(&apos;Maven test&apos;){
+    
+            when {
+                // Only say hello if a &quot;greeting&quot; is requested
+                expression { params.Env == &apos;hello1&apos; }
+            }
+            steps {
+              def mavenHome = tool name: &apos;M2_HOME&apos;, type: &apos;maven&apos;
+                bat &quot;${mavenHome}/bin/mvn clean test -Denv=${params.Env}  -DbrowserName=chrome&quot;
+                bat &quot;${mavenHome}/bin/mvn clean test -Denv=${params.Env}  -DbrowserName=chrome&quot;
+            }
+    }
+}
+}
+</script>
+    <loadedScripts class="map"/>
+    <persistedClean>true</persistedClean>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>141624294</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>12011626</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>423162971</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>26008406</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>31778287</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>13</iota>
+    <head>1:13</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList">
+    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+      <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches class="singleton-list">
+          <hudson.plugins.git.BranchSpec>
+            <name>*/master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="empty-list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.LocalBranch>
+            <localBranch>master</localBranch>
+          </hudson.plugins.git.extensions.impl.LocalBranch>
+        </extensions>
+      </scm>
+      <node></node>
+      <workspace>C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2</workspace>
+      <changelogFile>C:\Users\Gaurav Chaudhary\.jenkins\jobs\test2\builds\36\changelog0.xml</changelogFile>
+      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
+    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
+  </checkouts>
+</flow-build>

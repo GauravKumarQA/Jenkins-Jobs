@@ -1,0 +1,68 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15150116921,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat stepDefinition.testClass.user_is_on_Home_Page(testClass.java:19)\r\n\tat ✽.Given User is on Home Page(test.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "testClass.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User Navigate to LogIn Page",
+            "match": {
+              "location": "testClass.user_Navigate_to_LogIn_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User enters UserName and Password",
+            "match": {
+              "location": "testClass.user_enters_UserName_and_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Message displayed Login Successfully",
+            "match": {
+              "location": "testClass.message_displayed_Login_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]

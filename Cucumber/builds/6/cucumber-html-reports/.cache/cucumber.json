@@ -1,0 +1,70 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "login-action;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4801645763,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "testClass.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53332,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Navigate to LogIn Page",
+            "match": {
+              "location": "testClass.user_Navigate_to_LogIn_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 68264,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters UserName and Password",
+            "match": {
+              "location": "testClass.user_enters_UserName_and_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51198,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Message displayed Login Successfully",
+            "match": {
+              "location": "testClass.message_displayed_Login_Successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login Action",
+    "description": "",
+    "id": "login-action",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]

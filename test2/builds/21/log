@@ -1,0 +1,130 @@
+Started by user [8mha:////4PlKABuuWTuac4sQCoOllNFY0hTpNgFcwarjuMCpLzQEAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYe/dLi1CL99MTSosQyAFFyuarBAAAA[0mgaurav kumar
+Obtained Jenkinsfile from git https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] node
+Running on [8mha:////4ClANcZ+/HRniPCWsGKg0H/scGA5lRv0jQawK7WPYurxAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] {
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Pull from git hub)
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] git
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision fb914bb9124ae4c4d92ff6deb2ca004390c107d3 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f fb914bb9124ae4c4d92ff6deb2ca004390c107d3
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -D master # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master fb914bb9124ae4c4d92ff6deb2ca004390c107d3
+Commit message: "Update Jenkinsfile"
+ > C:\Program Files\Git\bin\git.exe rev-list 9d2b621982e24afcf0f2279e1751f4ca82fff1ff # timeout=10
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] stage
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] { (Maven test)
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] tool
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] bat
+[test2] Running batch script
+
+C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2>D:\maven\apache-maven-3.5.2/bin/mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building SampleProject 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.testng:testng:jar:5.14.3 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for org.testng:testng:jar:5.14.4 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for org.testng:testng:jar:5.14.5 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for com.beust:jcommander:jar:1.66 is missing, no dependency information available
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ SampleProject ---
+[INFO] Deleting C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ SampleProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:compile (default-compile) @ SampleProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ SampleProject ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.5.1:testCompile (default-testCompile) @ SampleProject ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 23 source files to C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ SampleProject ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 10.700 s
+[INFO] Finished at: 2018-08-09T21:57:55+05:30
+[INFO] Final Memory: 28M/263M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test (default-test) on project SampleProject: Execution default-test of goal org.apache.maven.plugins:maven-surefire-plugin:2.19.1:test failed: There was an error in the forked process
+[ERROR] org.testng.TestNGException: 
+[ERROR] 
+[ERROR] Cannot find class in classpath: testCases.TestAnnotations
+[ERROR] 	at org.testng.xml.XmlClass.loadClass(XmlClass.java:81)
+[ERROR] 	at org.testng.xml.XmlClass.init(XmlClass.java:73)
+[ERROR] 	at org.testng.xml.XmlClass.<init>(XmlClass.java:59)
+[ERROR] 	at org.testng.xml.TestNGContentHandler.startElement(TestNGContentHandler.java:582)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.emptyElement(XMLDTDValidator.java:766)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+[ERROR] 	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+[ERROR] 	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+[ERROR] 	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+[ERROR] 	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+[ERROR] 	at javax.xml.parsers.SAXParser.parse(SAXParser.java:195)
+[ERROR] 	at org.testng.xml.XMLParser.parse(XMLParser.java:39)
+[ERROR] 	at org.testng.xml.SuiteXmlParser.parse(SuiteXmlParser.java:16)
+[ERROR] 	at org.testng.xml.SuiteXmlParser.parse(SuiteXmlParser.java:9)
+[ERROR] 	at org.testng.xml.Parser.parse(Parser.java:170)
+[ERROR] 	at org.testng.TestNG.initializeSuitesAndJarFile(TestNG.java:304)
+[ERROR] 	at org.testng.TestNG.run(TestNG.java:1101)
+[ERROR] 	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+[ERROR] 	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+[ERROR] 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+[ERROR] 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+[ERROR] 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+[ERROR] 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // stage
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] }
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] // node
+[8mha:////4BqQEwdNAYsnse8+hN7KSnKeDMcov3WRcRmNHcosd2rAAAAAaB+LCAAAAAAAAP9b85aBtbiIwTG/KF0vKzUvOzOvODlTryCnNB3I0ivPL8pOy8kv18vKT9JLzs8rzs9J1QuHCgaV5jlDhPzyS1IZIICRiYGhoohBKqM0pTg/D64Hh8ICAFt0h+h/AAAA[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+[8mha:////4LqSZud29TYmi4xXolAnZdlzraQqyVX8cedYoX3V5qKpAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mFinished: FAILURE

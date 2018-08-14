@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.23">
+  <suites>
+    <suite>
+      <file>E:\TESTING\TPworkSpace\cucumber\target\surefire-reports\TEST-runner.RunTest.xml</file>
+      <name>runner.RunTest</name>
+      <duration>0.057</duration>
+      <time>0.057</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>0.009</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Given User is on Home Page</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepDefinition.testClass.user_is_on_Home_Page(testClass.java:19)
+	at ✽.Given User is on Home Page(test.feature:6)
+</errorStackTrace>
+          <stdout>Feature: Login Action
+hie
+</stdout>
+          <stderr>Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 43168
+Only local connections are allowed.
+Aug 09, 2018 1:34:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</stderr>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Scenario: Successful Login with Valid Credentials</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at stepDefinition.testClass.user_is_on_Home_Page(testClass.java:19)
+	at ✽.Given User is on Home Page(test.feature:6)
+</errorStackTrace>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>When User Navigate to LogIn Page</testName>
+          <skipped>true</skipped>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>And User enters UserName and Password</testName>
+          <skipped>true</skipped>
+          <failedSince>7</failedSince>
+        </case>
+        <case>
+          <duration>0.012</duration>
+          <className>Scenario: Successful Login with Valid Credentials</className>
+          <testName>Then Message displayed Login Successfully</testName>
+          <skipped>true</skipped>
+          <failedSince>7</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>0.057</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

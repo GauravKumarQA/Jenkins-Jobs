@@ -1,0 +1,20 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe init C:\Users\Gaurav Chaudhary\.jenkins\workspace\test2 # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+ > C:\Program Files\Git\bin\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision aabca3718d205c0e7d697158216b03cfa0aa1a6b (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f aabca3718d205c0e7d697158216b03cfa0aa1a6b
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master aabca3718d205c0e7d697158216b03cfa0aa1a6b
+Commit message: "Update Jenkinsfile"
+First time build. Skipping changelog.

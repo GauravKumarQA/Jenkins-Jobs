@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<maven2-moduleset plugin="maven-plugin@3.0">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>env</name>
+          <description></description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>3</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <value>testng.xml,firefox,ie</value>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>Checkbox</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <org.biouno.unochoice.ChoiceParameter plugin="uno-choice@2.1">
+          <name>environment</name>
+          <description></description>
+          <randomName>choice-parameter-29134745673202</randomName>
+          <visibleItemCount>1</visibleItemCount>
+          <script class="org.biouno.unochoice.model.GroovyScript">
+            <secureScript plugin="script-security@1.39">
+              <script>return[&apos;SIT&apos;,&apos;UAT&apos;]</script>
+              <sandbox>false</sandbox>
+            </secureScript>
+            <secureFallbackScript plugin="script-security@1.39">
+              <script>return[&apos;failed&apos;]</script>
+              <sandbox>false</sandbox>
+            </secureFallbackScript>
+          </script>
+          <projectName>Checkbox</projectName>
+          <choiceType>PT_SINGLE_SELECT</choiceType>
+          <filterable>false</filterable>
+          <filterLength>1</filterLength>
+        </org.biouno.unochoice.ChoiceParameter>
+        <org.biouno.unochoice.DynamicReferenceParameter plugin="uno-choice@2.1">
+          <name>value</name>
+          <description></description>
+          <randomName>choice-parameter-31718999920229</randomName>
+          <visibleItemCount>1</visibleItemCount>
+          <script class="org.biouno.unochoice.model.GroovyScript">
+            <secureScript plugin="script-security@1.39">
+              <script>if(environment.equals(&apos;SIT&apos;)){
+return [&apos;csp&apos;]
+}
+else if (environment.equals(&apos;UAT&apos;)){
+return [&apos;uat&apos;]
+}
+else{return [&apos;error&apos;]}</script>
+              <sandbox>false</sandbox>
+            </secureScript>
+            <secureFallbackScript plugin="script-security@1.39">
+              <script></script>
+              <sandbox>false</sandbox>
+            </secureFallbackScript>
+          </script>
+          <projectName>Checkbox</projectName>
+          <parameters class="linked-hash-map"/>
+          <referencedParameters>environment</referencedParameters>
+          <choiceType>ET_TEXT_BOX</choiceType>
+          <omitValueField>false</omitValueField>
+        </org.biouno.unochoice.DynamicReferenceParameter>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <rootModule>
+    <groupId>SampleProject</groupId>
+    <artifactId>SampleProject</artifactId>
+  </rootModule>
+  <rootPOM>E:\TESTING\TPworkSpace\SampleProject\pom.xml</rootPOM>
+  <goals>clean test -Dbuildtest=$value</goals>
+  <aggregatorStyleBuild>true</aggregatorStyleBuild>
+  <incrementalBuild>false</incrementalBuild>
+  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
+  <archivingDisabled>false</archivingDisabled>
+  <siteArchivingDisabled>false</siteArchivingDisabled>
+  <fingerprintingDisabled>false</fingerprintingDisabled>
+  <resolveDependencies>false</resolveDependencies>
+  <processPlugins>false</processPlugins>
+  <mavenValidationLevel>-1</mavenValidationLevel>
+  <runHeadless>false</runHeadless>
+  <disableTriggerDownstreamProjects>false</disableTriggerDownstreamProjects>
+  <blockTriggerWhenBuilding>true</blockTriggerWhenBuilding>
+  <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+  <reporters/>
+  <publishers/>
+  <buildWrappers/>
+  <prebuilders/>
+  <postbuilders/>
+  <runPostStepsIfResult>
+    <name>FAILURE</name>
+    <ordinal>2</ordinal>
+    <color>RED</color>
+    <completeBuild>true</completeBuild>
+  </runPostStepsIfResult>
+</maven2-moduleset>

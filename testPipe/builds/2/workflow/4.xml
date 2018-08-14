@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag plugin="workflow-support@2.16">
+  <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@2.24">
+    <parentIds>
+      <string>3</string>
+    </parentIds>
+    <id>4</id>
+    <startId>2</startId>
+    <result>
+      <name>ABORTED</name>
+      <ordinal>4</ordinal>
+      <color>ABORTED</color>
+      <completeBuild>false</completeBuild>
+    </result>
+  </node>
+  <actions>
+    <org.jenkinsci.plugins.workflow.actions.ErrorAction plugin="workflow-api@2.24">
+      <error class="hudson.AbortException">
+        <detailMessage>Build of Checkbox was cancelled</detailMessage>
+        <stackTrace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.build.BuildQueueListener.onLeft(BuildQueueListener.java:17)</trace>
+          <trace>hudson.model.Queue$LeftItem.enter(Queue.java:2723)</trace>
+          <trace>hudson.model.Queue$Item.cancel(Queue.java:2311)</trace>
+          <trace>hudson.model.Queue.cancel(Queue.java:745)</trace>
+          <trace>org.jenkinsci.plugins.workflow.support.steps.build.BuildTriggerStepExecution.stop(BuildTriggerStepExecution.java:192)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsThread.stop(CpsThread.java:296)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:968)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$6.onSuccess(CpsFlowExecution.java:957)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsFlowExecution$4$1.run(CpsFlowExecution.java:746)</trace>
+          <trace>org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:35)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)</trace>
+          <trace>java.util.concurrent.FutureTask.run(Unknown Source)</trace>
+          <trace>hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)</trace>
+          <trace>jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)</trace>
+          <trace>java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)</trace>
+          <trace>java.util.concurrent.FutureTask.run(Unknown Source)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)</trace>
+          <trace>java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)</trace>
+          <trace>java.lang.Thread.run(Unknown Source)</trace>
+        </stackTrace>
+        <suppressedExceptions class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </suppressedExceptions>
+      </error>
+    </org.jenkinsci.plugins.workflow.actions.ErrorAction>
+    <org.jenkinsci.plugins.workflow.actions.TimingAction plugin="workflow-api@2.24">
+      <startTime>1533801763176</startTime>
+    </org.jenkinsci.plugins.workflow.actions.TimingAction>
+  </actions>
+</org.jenkinsci.plugins.workflow.support.storage.SimpleXStreamFlowNodeStorage_-Tag>

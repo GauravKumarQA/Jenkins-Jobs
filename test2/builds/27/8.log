@@ -1,0 +1,16 @@
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision ee7cc53980c5b9986d923222f1dc0b2782d106c0 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f ee7cc53980c5b9986d923222f1dc0b2782d106c0
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -D master # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master ee7cc53980c5b9986d923222f1dc0b2782d106c0
+Commit message: "Update Jenkinsfile"
+ > C:\Program Files\Git\bin\git.exe rev-list 3450fe2ae8f7c56dd2bfe64945f437a6a41eeedb # timeout=10

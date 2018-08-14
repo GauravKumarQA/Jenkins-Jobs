@@ -1,0 +1,16 @@
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG # timeout=10
+Fetching upstream changes from https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/GauravKumarQA/AutomationFrameworkUsingTestNG +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 756b20180dafd689ac00c072db401016be9b7ca0 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 756b20180dafd689ac00c072db401016be9b7ca0
+ > C:\Program Files\Git\bin\git.exe branch -a -v --no-abbrev # timeout=10
+ > C:\Program Files\Git\bin\git.exe branch -D master # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -b master 756b20180dafd689ac00c072db401016be9b7ca0
+Commit message: "Update pom.xml"
+ > C:\Program Files\Git\bin\git.exe rev-list 756b20180dafd689ac00c072db401016be9b7ca0 # timeout=10

@@ -1,0 +1,31 @@
+Started by user [8mha:////4PlKABuuWTuac4sQCoOllNFY0hTpNgFcwarjuMCpLzQEAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYe/dLi1CL99MTSosQyAFFyuarBAAAA[0mgaurav kumar
+java.io.IOException: CreateProcess error=5, Access is denied
+	at java.lang.ProcessImpl.create(Native Method)
+	at java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.lang.ProcessImpl.start(Unknown Source)
+Caused: java.io.IOException: Cannot run program "C:\Program Files\Git\bin" (in directory "C:\Users\Gaurav Chaudhary\.jenkins\caches\git-1f8921ef833bdfb209a31e00b74f0040"): CreateProcess error=5, Access is denied
+	at java.lang.ProcessBuilder.start(Unknown Source)
+	at hudson.Proc$LocalProc.<init>(Proc.java:249)
+	at hudson.Proc$LocalProc.<init>(Proc.java:218)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:930)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:450)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1966)
+Caused: hudson.plugins.git.GitException: Error performing command: C:\Program Files\Git\bin init C:\Users\Gaurav Chaudhary\.jenkins\caches\git-1f8921ef833bdfb209a31e00b74f0040
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1977)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1938)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:1934)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommand(CliGitAPIImpl.java:1572)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:745)
+Caused: hudson.plugins.git.GitException: Could not init C:\Users\Gaurav Chaudhary\.jenkins\caches\git-1f8921ef833bdfb209a31e00b74f0040
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$5.execute(CliGitAPIImpl.java:747)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.init(CliGitAPIImpl.java:243)
+	at hudson.plugins.git.GitAPI.init(GitAPI.java:217)
+	at jenkins.plugins.git.GitSCMFileSystem$BuilderImpl.build(GitSCMFileSystem.java:324)
+	at jenkins.scm.api.SCMFileSystem.of(SCMFileSystem.java:196)
+	at jenkins.scm.api.SCMFileSystem.of(SCMFileSystem.java:172)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:99)
+	at org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition.create(CpsScmFlowDefinition.java:59)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:263)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:421)
+Finished: FAILURE

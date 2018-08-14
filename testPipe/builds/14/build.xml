@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.15">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>URL</name>
+          <description></description>
+          <value>HELLO2 </value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>URL</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>HELLO1 </string>
+                  <string>HELLO2 </string>
+                  <string>HELLO3</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>gaurav</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>22</queueId>
+  <timestamp>1533824847990</timestamp>
+  <startTime>1533824847996</startTime>
+  <result>SUCCESS</result>
+  <duration>1426</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>properties([parameters([choice(choices: &apos;HELLO1\nHELLO2\nHELLO3&apos;, description: &apos;&apos;, name: &apos;URL&apos;)]), pipelineTriggers([])])
+node{
+    stage(&apos;git pull&apos;){
+        echo &quot;the passed pera ${params.URL}&quot;
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <persistedClean>true</persistedClean>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>212016035</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>20784626</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1300204871</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>38701802</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>70735220</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>13</iota>
+    <head>1:13</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

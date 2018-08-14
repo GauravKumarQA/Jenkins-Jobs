@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<maven2-moduleset plugin="maven-plugin@3.0">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <rootModule>
+    <groupId>SampleProject</groupId>
+    <artifactId>cucumber</artifactId>
+  </rootModule>
+  <rootPOM>E:\TESTING\TPworkSpace\cucumber\pom.xml</rootPOM>
+  <goals>clean test</goals>
+  <aggregatorStyleBuild>true</aggregatorStyleBuild>
+  <incrementalBuild>false</incrementalBuild>
+  <ignoreUpstremChanges>false</ignoreUpstremChanges>
+  <ignoreUnsuccessfulUpstreams>false</ignoreUnsuccessfulUpstreams>
+  <archivingDisabled>false</archivingDisabled>
+  <siteArchivingDisabled>false</siteArchivingDisabled>
+  <fingerprintingDisabled>false</fingerprintingDisabled>
+  <resolveDependencies>false</resolveDependencies>
+  <processPlugins>false</processPlugins>
+  <mavenValidationLevel>-1</mavenValidationLevel>
+  <runHeadless>false</runHeadless>
+  <disableTriggerDownstreamProjects>false</disableTriggerDownstreamProjects>
+  <blockTriggerWhenBuilding>true</blockTriggerWhenBuilding>
+  <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+  <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+  <reporters>
+    <hudson.maven.reporters.MavenMailer>
+      <recipients>gaurav.kumar@testpoint.com.au</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+      <perModuleEmail>false</perModuleEmail>
+    </hudson.maven.reporters.MavenMailer>
+  </reporters>
+  <publishers>
+    <net.masterthought.jenkins.CucumberReportPublisher plugin="cucumber-reports@3.13.0">
+      <fileIncludePattern>**/*.json</fileIncludePattern>
+      <fileExcludePattern></fileExcludePattern>
+      <jsonReportDirectory>E:\TESTING\TPworkSpace\cucumber\target\Destination\</jsonReportDirectory>
+      <failedStepsNumber>0</failedStepsNumber>
+      <skippedStepsNumber>0</skippedStepsNumber>
+      <pendingStepsNumber>0</pendingStepsNumber>
+      <undefinedStepsNumber>0</undefinedStepsNumber>
+      <failedScenariosNumber>0</failedScenariosNumber>
+      <failedFeaturesNumber>0</failedFeaturesNumber>
+      <trendsLimit>0</trendsLimit>
+      <parallelTesting>false</parallelTesting>
+      <sortingMethod>ALPHABETICAL</sortingMethod>
+      <classifications class="empty-list"/>
+      <classificationsFilePattern></classificationsFilePattern>
+    </net.masterthought.jenkins.CucumberReportPublisher>
+  </publishers>
+  <buildWrappers/>
+  <prebuilders/>
+  <postbuilders/>
+  <runPostStepsIfResult>
+    <name>FAILURE</name>
+    <ordinal>2</ordinal>
+    <color>RED</color>
+    <completeBuild>true</completeBuild>
+  </runPostStepsIfResult>
+</maven2-moduleset>

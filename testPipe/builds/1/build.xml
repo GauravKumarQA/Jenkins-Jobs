@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.15">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>gaurav</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>12</queueId>
+  <timestamp>1533801756639</timestamp>
+  <startTime>1533801756644</startTime>
+  <result>FAILURE</result>
+  <duration>6668</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>build job: &apos;Checkbox&apos;, parameters: [[$class: &apos;ExtendedChoiceParameterValue&apos;, name: &apos;env&apos;, value: &apos;testng.xml&apos;], string(name: &apos;environment&apos;, value: &apos;SIT&apos;), string(name: &apos;value&apos;, value: &apos;&apos;)]
+build &apos;Cucumber&apos;
+</script>
+    <loadedScripts class="map"/>
+    <persistedClean>true</persistedClean>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>222565017</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>115014923</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>920942312</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>396904129</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>135302931</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>4</iota>
+    <head>1:4</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.15">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>env</name>
+          <description></description>
+          <value>pipe12345</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>browser</name>
+          <description></description>
+          <value>pipechrome</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>env</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>pipe12345</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+            <hudson.model.ChoiceParameterDefinition>
+              <name>browser</name>
+              <description></description>
+              <choices class="java.util.Arrays$ArrayList">
+                <a class="string-array">
+                  <string>pipechrome</string>
+                </a>
+              </choices>
+            </hudson.model.ChoiceParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>gaurav</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.9">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.54">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>20</queueId>
+  <timestamp>1533803662117</timestamp>
+  <startTime>1533803662135</startTime>
+  <result>FAILURE</result>
+  <duration>566</duration>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>build job: &apos;j1&apos;, parameters: [string(name: &apos;env&apos;, value: $env), string(name: &apos;browser&apos;, value:$browser)]
+build job: &apos;j2&apos;, parameters: [string(name: &apos;env&apos;, value: $env), string(name: &apos;browser&apos;, value: $browser)]
+</script>
+    <loadedScripts class="map"/>
+    <persistedClean>true</persistedClean>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>46174084</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>746798058</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>142540881</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>394683041</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>3600416</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>3</iota>
+    <head>1:3</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

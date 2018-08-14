@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result plugin="junit@1.23">
+  <suites>
+    <suite>
+      <file>E:\TESTING\TPworkSpace\SampleProject\target\surefire-reports\TEST-TestSuite.xml</file>
+      <name>TestSuite</name>
+      <duration>10.526</duration>
+      <time>10.526</time>
+      <enclosingBlocks/>
+      <enclosingBlockNames/>
+      <cases>
+        <case>
+          <duration>9.559</duration>
+          <className>pageObjects.test2</className>
+          <testName>test</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>10.526</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>
